@@ -1,10 +1,10 @@
-import com.google.gms.googleservices.GoogleServicesPlugin.MissingGoogleServicesStrategy
+import com.google.gms.googleservices.GoogleServicesPlugin
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.devtools.ksp)
     alias(libs.plugins.secrets)
-    alias(libs.plugins.google.services)
+   // alias(libs.plugins.google.services)
 }
 
 android {
@@ -43,26 +43,16 @@ android {
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.compose.material.icons.core)
-    implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.compose)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.room3.common)
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
-    implementation(libs.converter.moshi)
-    implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.logging.interceptor)
-    implementation(libs.moshi.kotlin)
-    implementation(libs.okhttp)
-    implementation(libs.retrofit)
-
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -70,6 +60,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.converter.moshi)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.retrofit)
+    implementation(libs.androidx.compose.material.icons.core)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.play.services.location)
 
     "ksp"(libs.androidx.room.compiler)
     "ksp"(libs.moshi.kotlin.codegen)
