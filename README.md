@@ -1,4 +1,6 @@
 Basic expense tracker with spending visualization, category budgets, alerts, and PDF/CSV export. Application based on Kotlin, MVVM, DI and Jeptpack Compose
+
+
 <img width="100" height="200" alt="Filter_1" src="https://github.com/user-attachments/assets/c42b7232-c44f-47a5-8d6c-deb23a03760f" />
 <img width="100" height="200" alt="Filter" src="https://github.com/user-attachments/assets/45d1944e-fe20-44a7-befe-d6c1cce21845" />
 <img width="100" height="200" alt="Analytics_2" src="https://github.com/user-attachments/assets/b8f6776b-2ade-48f9-bcb6-abc704a12d16" />
